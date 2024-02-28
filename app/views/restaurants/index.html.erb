@@ -1,0 +1,12 @@
+<div class="container">
+  <h1 class="ms-3 border-bottom mt-4 pb-3">All Restaurants</h1>
+  <div class="mt-4">
+    <ul>
+      <% @restaurants.each do |restaurant| %>
+        <li class="d-flex border-bottom"><span id="name"><%= restaurant.name%></span>
+        <%= link_to "See Deatails", restaurant_path(restaurant), :class => "btn btn-primary btn-sm m-2"%>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
